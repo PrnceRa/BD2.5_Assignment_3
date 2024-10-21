@@ -243,7 +243,7 @@ app.get('/hotels/sort/rating', (req, res) => {
   res.json({ hotels: result });
 });
 
-app.get('/hotels/sort/pricing', (req, res) => {
+app.get('/hotels/sort/reviews', (req, res) => {
   const { reviews } = req.query;
   const result = sortByReviews(hotels, reviews)
   res.json({ hotels: result });
